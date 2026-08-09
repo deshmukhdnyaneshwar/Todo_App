@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern ToDo App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Video -->
+    <video autoplay muted loop id="background-video">
+        <source src="background.mp4" type="video/mp4">
+    </video>
+
+    <!-- Dark Overlay -->
+    <div class="overlay"></div>
+
+    <!-- ToDo App -->
+    <div class="container">
+
+        <h1>My ToDo App</h1>
+
+        <p class="subtitle">Organize your day 🚀</p>
+
+        <div class="input-box">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="What do you need to do?"
+            >
+
+            <button onclick="addTask()">Add</button>
+        </div>
+
+        <div class="task-info">
+            <span>Total: <b id="totalTasks">0</b></span>
+            <span>Completed: <b id="completedTasks">0</b></span>
+        </div>
+
+        <ul id="taskList"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
